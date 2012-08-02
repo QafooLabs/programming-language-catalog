@@ -16,10 +16,16 @@
             <td><a href="{{language.url}}">{{language.url}}</a></td>
         </tr>
         <tr>
-            <td><b>Wikipedia:</b></td>
+            <td><b>Wikipedia (Source):</b></td>
             <td><a href="{{language.wiki}}">{{language.wiki}}</a></td>
+        </tr>
+        <tr>
+            <td><b>License:</b></td>
+            <td><a href="http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a></td>
         </tr>
     </table>
     <h2>Description</h2>
-    <p>{{language.description}}</p>
+    <p ng-repeat="paragraph in language.description |limitTo: 1">
+        {{paragraph}}
+    </p>
 </div>
