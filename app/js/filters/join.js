@@ -1,8 +1,6 @@
-(function(){
-"use strict";
-
-angular.module('languageCatalog.filters', []).
-  filter('join', function() {
+angular.module('languageCatalog.filters')
+.filter('join', function() {
+    "use strict";
     /**
      * Simple Filter to join together an array of values using a certain delimiter
      *
@@ -22,5 +20,4 @@ angular.module('languageCatalog.filters', []).
 
         return input.join(delimiter);
     }
-  });
-})();
+});
