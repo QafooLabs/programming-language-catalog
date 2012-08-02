@@ -1,0 +1,16 @@
+[
+    {
+        "uid"        :"javascript",
+        "name"       :"JavaScript",
+        "aliases"    :["ECMAScript"],
+        "url"        :"http://example.com",
+        "description":"Some Description"
+    },
+    {
+        "uid"        :"php",
+        "name"       :"PHP",
+        "aliases"    :["PHP: Hypertext Preprocessor"],
+        "url"        :"http://php.net",
+        "description":"Some Description"
+    }
+]
