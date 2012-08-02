@@ -3,7 +3,7 @@
         <input type="text" ng-model="languageSearchQuery" placeholder="Filter Languages" tabindex="1" accesskey="s" class="input-medium" focused="focused">
         <li class="nav-header">Languages</li>
         <div class="spacer"></div>
-        <li ng-repeat="language in languages | filter: {name: languageSearchQuery}" ng-class="navigationClass(language)">
+        <li ng-repeat="language in languages | filter: languageSearchQuery" ng-class="navigationClass(language)">
             <a href="#/{{language.uid}}">{{language.name}}</a>
         </li>
     </ul>
