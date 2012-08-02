@@ -2,15 +2,11 @@
     {
         "uid"        :"javascript",
         "name"       :"JavaScript",
-        "aliases"    :["ECMAScript"],
-        "url"        :"http://example.com",
-        "description":"Some Description"
+        "aliases"    :["ECMAScript"]
     },
     {
         "uid"        :"php",
         "name"       :"PHP",
-        "aliases"    :["PHP: Hypertext Preprocessor"],
-        "url"        :"http://php.net",
-        "description":"Some Description"
+        "aliases"    :["PHP: Hypertext Preprocessor"]
     }
 ]
