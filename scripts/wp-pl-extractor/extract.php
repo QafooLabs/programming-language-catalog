@@ -27,7 +27,7 @@ foreach($languageLinks as $languageLink){
         "name" => $languageLink->textContent,
         "aliases" => array(),
         "uid" => preg_replace(
-            array('(_?\\((?<!/)programming_language\\)?)', '(/)', '#'),
+            array('(_?\\((?<!/)programming_language\\)?)', '(/)', '(#)'),
             array('', '_', '_sharp'),
             urldecode(
                 strtolower(
