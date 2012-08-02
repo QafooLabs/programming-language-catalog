@@ -1,8 +1,19 @@
-'use strict';
+angular.module('languageCatalog.controllers')
+.controller('LanguageController', [
+    '$scope', '$routeParams', '$http',
+    /**
+     * Controller to handle the detailed language page view
+     *
+     * @param $scope
+     * @param $routeParams
+     * @param $http
+     */
+    function ($scope, $routeParams, $http) {
+        'use strict';
 
-function LanguageController($scope, $http) {
-
-};
-
-// DI injection definition (Only needed if code is minified)
-LanguageController.$inject = ['$scope', '$http'];
+        // Load the selected language details
+        $http.get('languages/' + $routeParams.language + '.json').success(function(data) {
+            $scope.language = data;
+        });
+    }
+]);
