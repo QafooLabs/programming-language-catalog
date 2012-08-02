@@ -1,0 +1,25 @@
+<div>
+    <h1>{{language.name}}</h1>
+    <table class="table table-striped table-bordered">
+        <tr>
+            <td><b>Name:</b></td>
+            <td>{{language.name}}</td>
+        </tr>
+        <tr ng-hide="language.aliases.length == '0'">
+            <td><b>Aliases:</b></td>
+            <td>
+                {{language.aliases | join: ', '}}
+            </td>
+        </tr>
+        <tr ng-show="language.url">
+            <td><b>Homepage:</b></td>
+            <td><a href="{{language.url}}">{{language.url}}</a></td>
+        </tr>
+        <tr>
+            <td><b>Wikipedia:</b></td>
+            <td><a href="{{language.wiki}}">{{language.wiki}}</a></td>
+        </tr>
+    </table>
+    <h2>Description</h2>
+    <p>{{language.description}}</p>
+</div>
