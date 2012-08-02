@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('languageCatalog', []).
+angular.module('languageCatalog', ['languageCatalog.filters']).
     config(
         ['$routeProvider', function($routeProvider) {
             $routeProvider.when('/', {templateUrl: 'partials/landing.html', controller: LandingController});
