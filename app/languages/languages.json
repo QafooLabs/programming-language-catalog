@@ -1,8 +1,8 @@
 [
     {
-        "uid"        :"javascript",
-        "name"       :"JavaScript",
-        "aliases"    :["ECMAScript"]
+        "uid"        :"ecmascript",
+        "name"       :"ECMAScript",
+        "aliases"    :["JavaScript", "JScript", "ActionScript"]
     },
     {
         "uid"        :"php",
